@@ -16,7 +16,7 @@ app.get('/about', function(request, response) {
 });
 app.use(express.static(__dirname + '/public'));
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
 	// message when started
 	console.log('Express server started!');
 }); // port 3000  (zelf)
